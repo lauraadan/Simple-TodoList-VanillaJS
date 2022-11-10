@@ -1,0 +1,109 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+body {
+    margin: 0px;
+    padding: 30px 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(48, 45, 63);
+}
+
+.newTask{
+    min-width: 50%;
+}
+
+button {
+    padding: 20px 50px;
+    background-color: cornflowerblue;
+    color: #eee;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+
+#list {
+    min-width: 50%;
+    flex: 1;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius:  4px;
+    -webkit-box-shadow: -5px 3px 45px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 3px 45px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 3px 45px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.todo {
+    padding: 20px;
+    border: 1px solid  rgb(37, 36, 42);
+    border-left: 4px solid  rgb(37, 36, 42);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.btn-remove {
+    padding: 5px 10px;
+    color: rgb(108, 3, 3);
+    font-size: 16px;
+    background-color: transparent;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    width: 100%;
+}
+
+.title{
+    color: #fff;
+}
+
+#clean{
+    background-color: #d71111;
+}
+
+#clean:hover{
+    background-color: #ab0d0d;
+}
+
+#add:hover{
+    background-color: #3a922d;
+}
+
+@media (max-width: 1024px){
+    .newTask {
+        min-width: 70%;
+    }
+    #list {
+        min-width: 70%;
+    }
+
+}
+
+
+@media (max-width: 768px){
+    .newTask {
+        min-width: 80%;
+    }
+    #list {
+        min-width: 80%;
+    }
+
+}
