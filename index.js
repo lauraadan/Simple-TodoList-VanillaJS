@@ -15,7 +15,7 @@ const handleClick = (event) => {
         <button class="btn-remove"><i class="fa-solid fa-trash-can"></i></button>
     </div>`;
 
-  // DELETE TASK Funcion para el botón remove de cada tarea
+  // DELETE TASK 
   const todoList = document.querySelectorAll(".todo button");
   for (let i = 0; i < todoList.length; i++) {
     const element = todoList[i];
